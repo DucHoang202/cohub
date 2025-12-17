@@ -1,0 +1,420 @@
+.footer {
+  border-top: 1px solid #E5E7EB;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  padding: 65px 0 0 0;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  // Header Section
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    flex: 1;
+    max-width: 784px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__logo-icon {
+    width: 103px;
+    height: auto;
+    display: block;
+  }
+
+  &__logo-text {
+    color: #000000;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 00;
+    line-height: 44px;
+    letter-spacing: -0.315px;
+  }
+
+  &__tagline {
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    line-height: 27px;
+    background: linear-gradient(90deg, #004FF9 0%, #9923F8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__social-link {
+    display: flex;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__social-icon {
+    width: 40px;
+    height: 41px;
+  }
+
+  // Separator
+  &__separator {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #E5E7EB;
+    margin: 24px 0;
+  }
+
+  // Navigation Section
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+
+  &__nav-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1;
+    min-width: 180px;
+
+    &:last-child {
+      gap: 32px;
+    }
+  }
+
+  &__nav-title {
+    color: #4B5563;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0.75;
+  }
+
+  &__nav-item {
+    margin: 0;
+  }
+
+  &__nav-link {
+    color: #090F14;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #007AFF;
+    }
+  }
+
+  // Payments Section
+  &__payments {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__payment-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__payment-logo {
+    height: 22px;
+    object-fit: contain;
+
+    &--vnpay {
+      width: 65px;
+    }
+  }
+
+  // Certifications Section
+  &__certifications {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__cert-logos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__cert-logo {
+    height: 42px;
+    max-width: 112px;
+    object-fit: contain;
+
+    &--small {
+      width: 40px;
+      height: 34px;
+    }
+  }
+
+  &__cert-group {
+    display: flex;
+    gap: 3px;
+  }
+
+  // Company Information Section
+  &__company {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    max-width: 764px;
+  }
+
+  &__company-name {
+    color: #212B36;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0 0 4px 0;
+  }
+
+  &__company-text {
+    color: #637381;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  &__company-address {
+    color: #637381;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    font-style: normal;
+    margin: 4px 0;
+  }
+
+  &__company-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  &__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #637381;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 19.5px;
+  }
+
+  &__contact-group {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  &__contact-label {
+    font-weight: 700;
+    color: #637381;
+  }
+
+  &__contact-link {
+    color: #007AFF;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0056b3;
+    }
+  }
+
+  &__copyright {
+    color: #212B36;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: right;
+  }
+
+  // Responsive Design
+  @media (max-width: 1400px) {
+    padding: 50px 0 0 0;
+
+    &__container {
+      padding: 0 60px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 0 0 0;
+
+    &__container {
+      padding: 0 32px;
+    }
+
+    &__header {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__navigation {
+      gap: 24px;
+    }
+
+    &__nav-column {
+      min-width: 150px;
+    }
+
+    &__company {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    &__copyright {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 32px 0 0 0;
+
+    &__container {
+      padding: 0 16px;
+    }
+
+    &__navigation {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__nav-column {
+      width: 100%;
+      min-width: auto;
+
+      &:last-child {
+        gap: 24px;
+      }
+    }
+
+    &__payment-row {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    &__cert-logos {
+      flex-wrap: wrap;
+    }
+
+    &__social {
+      gap: 16px;
+    }
+
+    &__social-icon {
+      width: 36px;
+      height: 37px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 24px 0 0 0;
+
+    &__container {
+      padding: 0 16px;
+    }
+
+    &__logo-text {
+      font-size: 18px;
+      line-height: 36px;
+    }
+
+    &__tagline {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__social {
+      gap: 12px;
+    }
+
+    &__social-icon {
+      width: 32px;
+      height: 33px;
+    }
+
+    &__company {
+      gap: 12px;
+    }
+
+    &__contact-group {
+      flex-direction: column;
+      gap: 2px;
+    }
+  }
+}

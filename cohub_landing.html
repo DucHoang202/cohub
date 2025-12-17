@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cohub – Nền tảng Coaching áp dụng AI </title>
+  <meta name="description" content="Cohub là nền tảng kết nối bạn với chuyên gia hàng đầu để học 1:1, nhóm nhỏ hoặc workshop, theo dõi tiến trình và tối ưu chi phí." />
+  <link rel="stylesheet" href="styles//main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__brand">
+        <strong class="header__logo">CoHub</strong>
+        <nav class="header__nav" aria-label="Chính">
+          <a class="header__link" href="#about">Giới thiệu</a>
+          <a class="header__link" href="#solutions">Giải pháp</a>
+          <a class="header__link" href="#support">Hỗ trợ</a>
+          <a class="header__link" href="#contact">Liên hệ</a>
+          <span class="badge badge--new">NEW<span class="badge__label">AI Agent</span></span>
+        </nav>
+      </div>
+      <div class="header__actions">
+        <a class="button button--primary" href="#search">Tìm kiếm chuyên gia</a>
+        <a class="button button--ghost" href="#login">Đăng nhập</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero section">
+      <div class="container hero-wrap">
+        <div>
+          <div class="pill" style="margin-bottom:16px"><span class="dot">NEW</span><span class="eyebrow" style="background:linear-gradient(180deg,#0050ff,#d14dda); -webkit-background-clip:text; background-clip:text; color:transparent">Nền tảng áp dụng AI hỗ trợ Coaching đầu tiên tại VN</span></div>
+          <h1 class="heading-xl" style="margin:0 0 12px">Kết nối chuyên gia bứt phá khả năng.</h1>
+          <p class="lead maxw-720" style="margin:0 0 24px">Cohub là nền tảng hỗ trợ bạn kết nối với các chuyên gia hàng đầu trong các lĩnh vực tại Việt Nam giúp bạn phát triển đúng hướng, nhanh chóng và hiệu quả.</p>
+          <div style="display:flex; gap:16px; flex-wrap:wrap">
+            <a class="btn btn-primary" href="#explore">Khám phá ngay</a>
+            <a class="btn btn-link" href="#become">Trở thành chuyên gia</a>
+          </div>
+        </div>
+        <figure class="card soft" style="border:none; box-shadow:none">
+          <img src="https://picsum.photos/seed/hero/724/483" alt="Hình minh hoạ coaching" style="border-radius:20px"/>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Sports ===== -->
+    <section class="section" id="sports">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:center; margin-bottom:32px">
+          <div>
+            <div class="eyebrow" style="color:var(--success); font-size:32px">Sports & Physical Performance</div>
+            <h2 class="heading-lg" style="margin-top:6px">Rèn luyện & phát triển sức khoẻ</h2>
+          </div>
+          <p class="lead">Mỗi bước tiến đều cần người đồng hành đúng. Tại Cohub, bạn được huấn luyện bởi những chuyên gia phù hợp nhất, theo cách phù hợp nhất với chính bạn.</p>
+        </div>
+
+        <div class="categories-slider swiper" style="overflow:hidden; padding:12px 0">
+            <div class="swiper-wrapper">
+              <!-- Card 1 -->
+              <article class="swiper-slide cat-card" style="width:280px">
+                <img src="https://picsum.photos/seed/pickleball/600/400" alt="Pickleball"/>
+                <div class="overlay">
+                  <div class="cat-chip"><strong>Pickleball</strong> <span class="tag green">86 Coach</span></div>
+                </div>
+              </article>
+            <!-- Card 2 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/gym/600/400" alt="Gym & Fitness"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Gym & Fitness</strong> <span class="tag green">62 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 3 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/basketball/600/400" alt="Bóng rổ"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Bóng rổ</strong> <span class="tag green">42 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 4 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/football/600/400" alt="Bóng đá"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Bóng đá</strong> <span class="tag green">56 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 5 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/tennis/600/400" alt="Tennis"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Tennis</strong> <span class="tag green">34 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 6 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/swimming/600/400" alt="Bơi lội"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Bơi lội</strong> <span class="tag green">28 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 7 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/yoga/600/400" alt="Yoga"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Yoga</strong> <span class="tag green">45 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 8 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/martial/600/400" alt="Võ thuật"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Võ thuật</strong> <span class="tag green">38 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 9 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/cycling/600/400" alt="Đạp xe"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Đạp xe</strong> <span class="tag green">25 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 10 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/running/600/400" alt="Chạy bộ"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Chạy bộ</strong> <span class="tag green">52 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 11 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/dance/600/400" alt="Khiêu vũ"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Khiêu vũ</strong> <span class="tag green">31 Coach</span></div>
+              </div>
+            </article>
+            <!-- Card 12 -->
+            <article class="swiper-slide cat-card">
+              <img src="https://picsum.photos/seed/volleyball/600/400" alt="Bóng chuyền"/>
+              <div class="overlay">
+                <div class="cat-chip"><strong>Bóng chuyền</strong> <span class="tag green">29 Coach</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div style="text-align:center; margin-top:24px">
+          <a class="btn btn-ghost" href="#all-sports">Xem tất cả</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AI & Technology ===== -->
+    <section class="section section-dark" id="tech">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:center; margin-bottom:32px">
+          <div>
+            <div class="eyebrow" style="font-size:32px; background:linear-gradient(180deg,#f97eff,#c5d7ff); -webkit-background-clip:text; background-clip:text; color:transparent">AI & Technology Coaching</div>
+            <h2 class="heading-xl">Làm chủ công nghệ, dẫn đầu thay đổi</h2>
+          </div>
+          <p class="lead">Đừng chỉ theo kịp công nghệ, hãy đón đầu nó. Học cùng chuyên gia tại CoHub để ứng dụng AI, viết code và làm chủ sản phẩm như một người kiến tạo.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="cat-card" style="min-height:320px">
+            <img src="https://picsum.photos/seed/ai-mentor/600/400" alt="AI Mentor"/>
+            <div class="overlay"><div class="cat-chip"><strong>AI Mentor</strong> <span class="tag purple">40 Coach</span></div></div>
+          </article>
+          <article class="cat-card" style="min-height:320px">
+            <img src="https://picsum.photos/seed/blockchain/600/400" alt="Blockchain & Crypto"/>
+            <div class="overlay"><div class="cat-chip"><strong>Blockchain & Crypto</strong> <span class="tag purple">12 Coach</span></div></div>
+          </article>
+          <article class="cat-card" style="min-height:320px">
+            <img src="https://picsum.photos/seed/coding/600/400" alt="Coding & Engineering"/>
+            <div class="overlay"><div class="cat-chip"><strong>Coding & Engineering</strong> <span class="tag purple">12 Coach</span></div></div>
+          </article>
+          <article class="cat-card" style="min-height:320px">
+            <img src="https://picsum.photos/seed/ux/600/400" alt="UX & Product Design"/>
+            <div class="overlay"><div class="cat-chip"><strong>UX & Product Design</strong> <span class="tag purple">12 Coach</span></div></div>
+          </article>
+        </div>
+        <div style="text-align:center; margin-top:24px">
+          <a class="btn" style="background:#fff; color:#111" href="#all-tech">Xem tất cả</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HR & Leadership ===== -->
+    <section class="section" id="hr">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:center; margin-bottom:32px">
+          <div>
+            <div class="eyebrow" style="color:var(--brand-2); font-size:32px">HR Management & Leadership</div>
+            <h2 class="heading-lg" style="margin-top:6px">Quản trị nhân sự & vận hành doanh nghiệp</h2>
+          </div>
+          <p class="lead">Mỗi bước tiến đều cần người đồng hành đúng. Tại Cohub, bạn được huấn luyện bởi những chuyên gia phù hợp nhất, theo cách phù hợp nhất với chính bạn.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="cat-card"><img src="https://picsum.photos/seed/hr/600/400" alt="HR Management"/><div class="overlay"><div class="cat-chip"><strong>HR Management</strong><span class="tag blue">40 Coach</span></div></div></article>
+          <article class="cat-card"><img src="https://picsum.photos/seed/lead/600/400" alt="Leadership Mentors"/><div class="overlay"><div class="cat-chip"><strong>Leadership Mentors</strong><span class="tag blue">12 Coach</span></div></div></article>
+          <article class="cat-card"><img src="https://picsum.photos/seed/startup/600/400" alt="Startup Mentors"/><div class="overlay"><div class="cat-chip"><strong>Startup Mentors</strong><span class="tag blue">12 Coach</span></div></div></article>
+          <article class="cat-card"><img src="https://picsum.photos/seed/career/600/400" alt="Career Coaches"/><div class="overlay"><div class="cat-chip"><strong>Career Coaches</strong><span class="tag blue">12 Coach</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 1:1 Experts ===== -->
+    <section class="section section-dark" id="experts" style="position:relative; overflow:hidden">
+      <div class="container">
+        <h2 class="heading-xl" style="text-align:center; margin-bottom:24px">Đồng hành 1:1 cùng các chuyên gia hàng đầu</h2>
+      </div>
+      <div class="coach-slider">
+        <div class="track">
+          <div class="coach-container">
+            <article class="coach-mini">
+              <figure><img src="https://picsum.photos/seed/ex1/300/200" alt="Đinh Hồng Sơn"/></figure>
+              <div class="content">
+                <h4>Đinh Hồng Sơn</h4><p>CEO/Founder, CoHub</p>
+              </div>
+            </article>
+          <article class="coach-mini">
+            <figure><img src="https://picsum.photos/seed/ex2/300/200" alt="Trần Minh Anh"/></figure>
+            <div class="content" style="padding:0 8px 8px"><h4>Trần Minh Anh</h4><p>HR Director, ABC Bank</p></div>
+          </article>
+          <article class="coach-mini"><figure><img src="https://picsum.photos/seed/ex3/300/200" alt="Nguyễn Hồng Phúc"/></figure><div class="content" style="padding:0 8px 8px"><h4>Nguyễn Hồng Phúc</h4><p>Senior AI Engineer, SpaceX</p></div></article>
+          <article class="coach-mini"><figure><img src="https://picsum.photos/seed/ex4/300/200" alt="Lê Tuấn Anh"/></figure><div class="content" style="padding:0 8px 8px"><h4>Lê Tuấn Anh</h4><p>Pickleball Coach</p></div></article>
+          <article class="coach-mini"><figure><img src="https://picsum.photos/seed/ex5/300/200" alt="Trần Anh Tú"/></figure><div class="content" style="padding:0 8px 8px"><h4>Trần Anh Tú</h4><p>Gym & Fitness Coach</p></div></article>
+          <article class="coach-mini"><figure><img src="https://picsum.photos/seed/ex6/300/200" alt="Trần Anh Tú"/></figure><div class="content" style="padding:0 8px 8px"><h4>Trần Anh Tú</h4><p>CMO, Zak Media</p></div></article>
+          <article class="coach-mini"><figure><img src="https://picsum.photos/seed/ex7/300/200" alt="Trần Anh Tú"/></figure><div class="content" style="padding:0 8px 8px"><h4>Trần Anh Tú</h4><p>Football Coach</p></div></article>
+          <article class="coach-mini"><figure><img src="https://picsum.photos/seed/ex8/300/200" alt="Trần Anh Tú"/></figure><div class="content" style="padding:0 8px 8px"><h4>Trần Anh Tú</h4><p>Tennis Coach</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Benefits ===== -->
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:center; margin-bottom:24px">
+          <h2 class="heading-xl">Bạn nhận được gì khi học với Cohub?</h2>
+          <p class="lead">Nền tảng coaching toàn diện giúp bạn kết nối với chuyên gia phù hợp và phát triển kỹ năng một cách linh hoạt, liền mạch.</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="benefit"><div class="ico">1:1</div><div><strong>Huấn luyện 1:1 cá nhân hoá</strong></div></div>
+          <div class="benefit"><div class="ico">ID</div><div><strong>Hồ sơ chuyên gia rõ ràng</strong></div></div>
+          <div class="benefit"><div class="ico">✓</div><div><strong>Chuyên gia uy tín, kiểm duyệt</strong></div></div>
+          <div class="benefit"><div class="ico">₫</div><div><strong>Thanh toán đơn giản, tự động</strong></div></div>
+          <div class="benefit"><div class="ico">⏰</div><div><strong>Chọn thời gian linh hoạt</strong></div></div>
+          <div class="benefit"><div class="ico">↺</div><div><strong>Hoàn tiền 100% nếu không hài lòng</strong></div></div>
+          <div class="benefit"><div class="ico">★</div><div><strong>Đánh giá minh bạch</strong></div></div>
+          <div class="benefit"><div class="ico">📈</div><div><strong>Quản trị & theo dõi tiến trình</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Feature: Đúng người... ===== -->
+    <section class="section">
+      <div class="container grid grid-2" style="align-items:center">
+        <figure class="card soft" style="border:none; box-shadow:none"><img src="https://picsum.photos/seed/right-person/800/480" alt="Kết nối đúng chuyên gia" style="border-radius:20px"/></figure>
+        <div>
+          <h2 class="heading-xl">Đúng người, đúng cách, đúng lúc</h2>
+          <p class="lead">Cohub kết nối bạn với những chuyên gia phù hợp nhất, để học tập và phát triển theo cách phù hợp nhất với chính mình.</p>
+          <ul class="checklist" style="margin:16px 0 0; padding:0; list-style:none">
+            <li><span class="tick"></span> Gặp chuyên gia trực tiếp hoặc online</li>
+            <li><span class="tick"></span> Học 1:1, nhóm nhỏ hoặc workshop</li>
+            <li><span class="tick"></span> Lựa chọn theo phong cách và mục tiêu</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Feature: Lộ trình ===== -->
+    <section class="section">
+      <div class="container grid grid-2" style="align-items:center">
+        <div>
+          <h2 class="heading-xl">Quản lý lộ trình học tập hiệu quả</h2>
+          <ul class="checklist" style="margin:16px 0 0; padding:0; list-style:none">
+            <li><span class="tick"></span> Theo dõi tiến độ theo thời gian thực</li>
+            <li><span class="tick"></span> Tự lập kế hoạch phù hợp mục tiêu</li>
+            <li><span class="tick"></span> Đánh giá và điều chỉnh lộ trình dễ dàng</li>
+          </ul>
+        </div>
+        <figure class="card soft" style="border:none; box-shadow:none"><img src="https://picsum.photos/seed/plan/800/800" alt="Quản lý lộ trình" style="border-radius:20px"/></figure>
+      </div>
+    </section>
+
+    <!-- ===== B2B Training ===== -->
+    <section class="section section-dark" id="b2b">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:center; margin-bottom:24px">
+          <div>
+            <div class="pill" style="background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.2); color:#fff">Kết nối Doanh nghiệp</div>
+            <h2 class="heading-xl" style="margin-top:10px">Kết nối đào tạo giữa Chuyên Gia và Doanh Nghiệp</h2>
+          </div>
+          <div>
+            <p class="lead">Cung cấp đa dạng hình thức đào tạo cho Doanh Nghiệp từ inhouse tới elearning với các Chuyên Gia hàng đầu tại Việt Nam.</p>
+            <a class="btn" style="background:#fff" href="#learn-more"><strong style="color:#1a2adf">Tìm hiểu thêm</strong></a>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <article class="card" style="background:linear-gradient(180deg,#1a2adf,#5c78ff); color:#fff">
+            <div class="content">
+              <h3 class="heading-md" style="color:#fff">Đào tạo & đánh giá nhân sự</h3>
+              <p class="muted" style="color:#c8d6ff">OnAir cung cấp các chương trình đào tạo tại chỗ ngay tại Doanh Nghiệp, nâng cao hiệu quả từ tương tác trực tiếp.</p>
+            </div>
+            <img src="https://picsum.photos/seed/corp1/800/420" alt="Đào tạo nhân sự"/>
+          </article>
+          <article class="card" style="background:linear-gradient(180deg,#1a2adf,#5c78ff); color:#fff">
+            <div class="content">
+              <h3 class="heading-md" style="color:#fff">Chuyển đổi số & áp dụng công nghệ</h3>
+              <p class="muted" style="color:#c8d6ff">Tổ chức khoá học trực tuyến hoặc hybrid đáp ứng nhu cầu đào tạo đa dạng của doanh nghiệp.</p>
+            </div>
+            <img src="https://picsum.photos/seed/corp2/800/420" alt="Chuyển đổi số"/>
+          </article>
+          <article class="card" style="background:linear-gradient(180deg,#1a2adf,#5c78ff); color:#fff">
+            <div class="content">
+              <h3 class="heading-md" style="color:#fff">Quản trị nhân sự & vận hành doanh nghiệp</h3>
+              <p class="muted" style="color:#c8d6ff">Học qua video/tài liệu, kiểm tra định kỳ, triển khai diện rộng với chi phí tối ưu.</p>
+            </div>
+            <img src="https://picsum.photos/seed/corp3/800/420" alt="Quản trị vận hành"/>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Courses ===== -->
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:center; margin-bottom:16px">
+          <h2 class="heading-xl">Các lớp học đang chờ bạn</h2>
+          <div style="text-align:right"><a class="btn btn-ghost" href="#more-courses">Xem thêm</a></div>
+        </div>
+        <div class="grid grid-4">
+          <!-- Course 1 -->
+          <article class="card">
+            <div class="content">
+              <div style="display:flex; gap:12px; align-items:center">
+                <img src="https://picsum.photos/seed/avatar1/80/80" alt="Trang Phan" style="width:40px; height:40px; border-radius:999px"/>
+                <div>
+                  <div style="font-weight:600">Trang Phan</div>
+                  <div class="muted" style="font-size:12px">Money Educator · Re-finance…</div>
+                </div>
+              </div>
+              <h3 style="margin:14px 0 6px; font-size:16px">Quản Lý Tài Chính Cá Nhân Trong Giai Đoạn Chuyển Nghề</h3>
+              <div style="display:flex; justify-content:space-between; align-items:center">
+                <span class="muted" style="font-size:14px">0 giờ 58 phút</span>
+                <strong>699.000 ₫</strong>
+              </div>
+            </div>
+            <img src="https://picsum.photos/seed/course1/600/340" alt="Khoá học tài chính"/>
+          </article>
+
+          <!-- Course 2 (discount) -->
+          <article class="card">
+            <div class="content">
+              <div style="display:flex; gap:12px; align-items:center">
+                <img src="https://picsum.photos/seed/avatar2/80/80" alt="Lê Tuấn Anh" style="width:40px; height:40px; border-radius:999px"/>
+                <div>
+                  <div style="font-weight:600">Lê Tuấn Anh</div>
+                  <div class="muted" style="font-size:12px">Chuyên gia tư vấn hướng nghiệp</div>
+                </div>
+              </div>
+              <div class="tag" style="background:var(--danger); margin:12px 0; display:inline-block">-50%</div>
+              <h3 style="margin:0 0 8px; font-size:16px">Chuỗi webinar Hiểu mình đủ, chọn nghề đúng</h3>
+              <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:8px">
+                <span class="muted" style="font-size:14px">3 giờ 47 phút</span>
+                <div style="text-align:right">
+                  <div class="muted" style="text-decoration:line-through; font-size:12px">550.000 ₫</div>
+                  <div style="color:var(--brand); font-weight:700">275.000 ₫</div>
+                </div>
+              </div>
+              <div class="progress" style="margin-top:12px">
+                <span class="bar" style="width:25%"></span>
+                <span class="label">Hết ưu đãi sau 30/08/2025</span>
+              </div>
+            </div>
+            <img src="https://picsum.photos/seed/course2/600/340" alt="Webinar hướng nghiệp"/>
+          </article>
+
+          <!-- Course 3 -->
+          <article class="card">
+            <div class="content">
+              <div style="display:flex; gap:12px; align-items:center">
+                <img src="https://picsum.photos/seed/avatar3/80/80" alt="Vũ Trụ Creator" style="width:40px; height:40px; border-radius:999px"/>
+                <div>
+                  <div style="font-weight:600">Vũ Trụ Creator</div>
+                  <div class="muted" style="font-size:12px">Giáo dục</div>
+                </div>
+              </div>
+              <h3 style="margin:14px 0 6px; font-size:16px">Trendtalk – The Update Hour: Cập nhật xu hướng & ứng dụng thực tế</h3>
+              <div style="display:flex; justify-content:space-between; align-items:center">
+                <span class="muted" style="font-size:14px">1 giờ 50 phút</span>
+                <strong>199.000 ₫</strong>
+              </div>
+            </div>
+            <img src="https://picsum.photos/seed/course3/600/340" alt="Trendtalk"/>
+          </article>
+
+          <!-- Course 4 -->
+          <article class="card">
+            <div class="content">
+              <div style="display:flex; gap:12px; align-items:center">
+                <img src="https://picsum.photos/seed/avatar4/80/80" alt="Vũ Trụ Creator" style="width:40px; height:40px; border-radius:999px"/>
+                <div>
+                  <div style="font-weight:600">Vũ Trụ Creator</div>
+                  <div class="muted" style="font-size:12px">Giáo dục</div>
+                </div>
+              </div>
+              <h3 style="margin:14px 0 6px; font-size:16px">The Creation Backstage – Hậu trường sáng tạo nội dung</h3>
+              <div style="display:flex; justify-content:space-between; align-items:center">
+                <span class="muted" style="font-size:14px">1 giờ 31 phút</span>
+                <strong>199.000 ₫</strong>
+              </div>
+            </div>
+            <img src="https://picsum.photos/seed/course4/600/340" alt="Creation Backstage"/>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stats band ===== -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="stats">
+          <div class="grid grid-4" style="align-items:center">
+            <div>
+              <h3 class="heading-md" style="margin:0 0 6px; color:#fff">Những con số ấn tượng của CoHub</h3>
+              <p class="note" style="color:#eaf0ff">Tăng tốc học tập và kết nối với cộng đồng chuyên gia</p>
+            </div>
+            <div style="text-align:center">
+              <div style="font-size:44px; font-weight:900">60k+</div>
+              <div class="note">Thành viên cộng đồng chuyên gia OnAir</div>
+            </div>
+            <div style="text-align:center">
+              <div style="font-size:44px; font-weight:900">200+</div>
+              <div class="note">Chuyên gia hàng đầu đã tham gia OnAir</div>
+            </div>
+            <div style="text-align:center">
+              <div style="font-size:44px; font-weight:900">05 phút</div>
+              <div class="note">Sản xuất & quản lý khoá học A–Z</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Blog ===== -->
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="grid grid-2" style="align-items:center; margin-bottom:16px">
+          <div>
+            <div class="eyebrow" style="color:var(--brand-2); font-size:32px">Blog</div>
+            <h2 class="heading-lg" style="margin-top:6px">Tri thức CoHub</h2>
+          </div>
+          <p class="lead">Những bản tin mới nhất về đào tạo và kết nối trong lĩnh vực Coaching, được đội ngũ biên tập của CoHub chia sẻ hàng ngày.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card soft">
+            <img src="https://picsum.photos/seed/blog1/600/340" alt="Huấn luyện Pickleball"/>
+            <div class="content"><h3 style="margin:0 0 8px">Nở rộ các hình thức huấn luyện viên Pickleball mới tại Việt Nam</h3><p class="muted">Hub kiến thức chuyên môn đầu tiên tại Việt Nam dành cho Solo Expert về Kinh Doanh Tri Thức.</p></div>
+          </article>
+          <article class="card soft">
+            <img src="https://picsum.photos/seed/blog2/600/340" alt="Huấn luyện Pickleball"/>
+            <div class="content"><h3 style="margin:0 0 8px">Nở rộ các hình thức huấn luyện viên Pickleball mới tại Việt Nam</h3><p class="muted">Hub kiến thức chuyên môn đầu tiên tại Việt Nam dành cho Solo Expert về Kinh Doanh Tri Thức.</p></div>
+          </article>
+          <article class="card soft">
+            <img src="https://picsum.photos/seed/blog3/600/340" alt="Huấn luyện Pickleball"/>
+            <div class="content"><h3 style="margin:0 0 8px">Nở rộ các hình thức huấn luyện viên Pickleball mới tại Việt Nam</h3><p class="muted">Hub kiến thức chuyên môn đầu tiên tại Việt Nam dành cho Solo Expert về Kinh Doanh Tri Thức.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA Subscribe ===== -->
+    <section class="section" style="background:linear-gradient(180deg,#0d0a2c,#2463eb)">
+      <div class="container" style="display:grid; gap:24px; grid-template-columns: 2fr 1fr; align-items:center">
+        <div>
+          <h2 class="heading-xl" style="color:#fff">Trở thành người dẫn đầu trong lĩnh vực của bạn!</h2>
+          <p class="lead" style="color:#fff">Đăng ký nhận tin để cập nhật kiến thức giá trị, sự kiện và khoá học mới nhất từ OnAir.</p>
+        </div>
+        <form onsubmit="event.preventDefault()" class="card" style="display:flex; gap:8px; align-items:center; padding:8px">
+          <input type="email" placeholder="Nhập email của bạn" aria-label="Email" required style="flex:1; height:44px; border:1px solid var(--border); border-radius:10px; padding:0 12px" />
+          <button class="btn btn-primary" type="submit">Nhận thông tin</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container section-tight">
+      <div class="cols" style="margin-bottom:24px">
+        <div>
+          <h3 style="margin:0 0 8px">CoHub</h3>
+          <p class="muted">Nền tảng áp dụng AI hỗ trợ Coaching đầu tiên tại VN</p>
+        </div>
+
+        <div>
+          <strong class="muted" style="text-decoration:underline; font-size:12px">Về Chúng tôi</strong>
+          <ul style="list-style:none; padding:0; margin:10px 0 0; color:#111; opacity:.9; font-size:12px">
+            <li>Giới thiệu CoHub</li>
+            <li>Thông tin liên hệ</li>
+          </ul>
+        </div>
+        <div>
+          <strong class="muted" style="text-decoration:underline; font-size:12px">Dịch vụ</strong>
+          <ul style="list-style:none; padding:0; margin:10px 0 0; color:#111; opacity:.9; font-size:12px">
+            <li>Sự kiện trực tuyến</li>
+            <li>Đặt lịch hẹn chuyên gia</li>
+            <li>Khoá học</li>
+          </ul>
+        </div>
+        <div>
+          <strong class="muted" style="text-decoration:underline; font-size:12px">Hỗ trợ</strong>
+          <ul style="list-style:none; padding:0; margin:10px 0 0; color:#111; opacity:.9; font-size:12px">
+            <li>Trung tâm hỗ trợ</li>
+            <li>Điều khoản sử dụng</li>
+            <li>Điều khoản dành cho Chuyên gia</li>
+            <li>Hướng dẫn thanh toán VNPAY</li>
+          </ul>
+        </div>
+        <div>
+          <strong class="muted" style="text-decoration:underline; font-size:12px">Chính sách & quy định</strong>
+          <ul style="list-style:none; padding:0; margin:10px 0 0; color:#111; opacity:.9; font-size:12px">
+            <li>Quy chế hoạt động</li>
+            <li>Chính sách bảo mật thông tin</li>
+            <li>Giải quyết tranh chấp khiếu nại</li>
+            <li>Bảo mật thanh toán</li>
+            <li>Chính sách đổi trả & kiểm hàng</li>
+            <li>Điều kiện vận chuyển & giao nhận</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr style="border:none; border-top:1px solid var(--border); margin:24px 0"/>
+
+      <div class="grid grid-2" style="align-items:flex-end; gap:24px">
+        <div>
+          <div style="font-weight:600">Công ty Cổ phần CoHub</div>
+          <div class="note">Mã số doanh nghiệp: 0318014068 do Sở Kế Hoạch và Đầu Tư TP.Hà Nội cấp lần đầu ngày 25/08/2025</div>
+          <div class="note">192 Hoàng Cầu, Hà Nội</div>
+          <div class="note">Email: contact@cohub.vn · Hotline: 0888888888 · Office: 0388888888</div>
+        </div>
+        <div style="text-align:right" class="note">Copyright © 2025 CoHub. All rights reserved</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoriesSlider = new Swiper('.categories-slider', {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        speed: 500,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            centeredSlides: false,
+          },
+          1024: {
+            slidesPerView: 4,
+            centeredSlides: false,
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+.b2b {
+  padding: 80px 0;
+  background: #FFF9F1;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @media (max-width: 1240px) {
+      padding: 0 40px;
+    }
+
+    @media (max-width: 768px) {
+      gap: 40px;
+      padding: 0 20px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 134px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+    }
+
+    @media (max-width: 768px) {
+      gap: 24px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 650px;
+  }
+
+  &__logo {
+    svg {
+      height: 17px;
+      width: 151px;
+    }
+  }
+
+  &__title {
+    color: #212B36;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -1.44px;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+      letter-spacing: -1.08px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+      letter-spacing: -0.84px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 368px;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+
+  &__description {
+    color: #212B36;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    height: 48px;
+    min-width: 64px;
+    padding: 11.75px 17px 12.75px 17px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #835B1F;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    
+    color: #FFF;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    
+    &:hover {
+      background: #704e1a;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  &__service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 1px solid #A87C3B;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    flex: 1 0 0;
+  }
+
+  &__service-content {
+    display: flex;
+    margin-bottom: auto;
+    padding: 24px 16px 16px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    @media (max-width: 768px) {
+      padding: 20px 16px 16px 16px;
+    }
+  }
+
+  &__service-title {
+    align-self: stretch;
+    color: #212B36;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.2px;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__service-description {
+    color: #212B36;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.16px;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
+
+  &__service-image {
+    align-self: stretch;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 294.19px;
+      max-width: 373.33px;
+      object-fit: cover;
+      display: block;
+
+      @media (max-width: 768px) {
+        height: 200px;
+        max-width: 100%;
+      }
+    }
+  }
+}

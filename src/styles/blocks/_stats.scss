@@ -1,0 +1,192 @@
+.stats {
+  background: #062E97;
+  padding: 60px 40px 40px;
+  border-radius: 16px;
+  color: #fff;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    max-width: 420px;
+  }
+
+  &__heading {
+    color: #fff;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  &__metrics {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  &__item {
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__number {
+    color: #fff;
+    text-align: center;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  &__description {
+    color: #fff;
+    text-align: center;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  &__card {
+    // Card styling only applies on mobile
+  }
+
+  // Responsive design
+  // Tablet view: title separate, numbers in row
+  @media (max-width: 1024px) and (min-width: 641px) {
+    background: transparent;
+    padding: 0;
+
+    &__container {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__intro {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__heading {
+      font-size: 24px;
+      line-height: 32px;
+      color: #090F14;
+    }
+
+    &__metrics {
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
+      width: 100%;
+    }
+
+    &__item {
+      flex: 1;
+      max-width: 300px;
+      gap: 0;
+    }
+
+    &__card {
+      background: #062E97;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    &__number {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    background: transparent;
+    padding: 0;
+
+    &__container {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__intro {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__heading {
+      font-size: 24px;
+      line-height: 32px;
+      color: #090F14;
+    }
+
+    &__metrics {
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+
+    &__item {
+      width: 100%;
+      gap: 0;
+    }
+
+    &__card {
+      background: #062E97;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    &__number {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__metrics {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    &__item {
+      width: 100%;
+      /* max-width: 200px; */
+    }
+  }
+}

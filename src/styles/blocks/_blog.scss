@@ -1,0 +1,367 @@
+.blog {
+  padding: 80px 0;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 134px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
+
+  &__intro {
+    display: flex;
+    max-width: 650px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+
+    // Desktop: Align to left
+    @media (min-width: 1025px) {
+      align-items: flex-start;
+    }
+  }
+
+  &__label {
+    color: #2463EB;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0;
+    text-align: center;
+
+    // Desktop: Align to left
+    @media (min-width: 1025px) {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    color: #090F14;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.72px;
+    margin: 0;
+    text-align: center;
+
+    // Desktop: Align to left
+    @media (min-width: 1025px) {
+      text-align: left;
+    }
+  }
+
+  &__description {
+    display: flex;
+    width: 368px;
+    max-width: 368px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__description-text {
+    color: #090F14;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__slider-container {
+    position: relative;
+    width: 100vw;
+    margin-left: -16px;
+    overflow: visible;
+
+    // Desktop: Use container width instead of viewport width
+    @media (min-width: 1025px) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &__swiper {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible;
+
+    // Desktop: Full container width
+    @media (min-width: 1025px) {
+      width: 100%;
+      max-width: 1152px;
+      margin: 0 auto;
+
+      .swiper-wrapper {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    .swiper-wrapper {
+      padding-right: 16px;
+    }
+
+    .swiper-slide {
+      width: 280px;
+      flex: 0 0 280px;
+      height: auto;
+      display: flex;
+
+      &:first-child {
+        margin-left: 16px;
+      }
+
+      // Desktop: Let Swiper handle 4 slides per view with 24px gap
+      @media (min-width: 1025px) {
+        width: auto;
+        flex: none;
+        margin-left: 0 !important;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &:last-child {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    background: #F7F9FA;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &__card-image {
+    height: 240px;
+    align-self: stretch;
+    object-fit: cover;
+    aspect-ratio: 127/83;
+  }
+
+  &__card-content {
+    display: flex;
+    padding: 24px 20px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+
+  &__card-category {
+    color: #2463EB;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+
+  &__card-title {
+    color: #212B36;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__card-description {
+    color: #090F14;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+  }
+
+
+  // Pagination
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+
+    :global(.swiper-pagination-bullet) {
+      width: 8px;
+      height: 8px;
+      background: #D1D5DB;
+      border-radius: 50%;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+
+    :global(.swiper-pagination-bullet-active) {
+      background: #2463EB;
+      width: 24px;
+      border-radius: 4px;
+    }
+  }
+
+  // Bottom section
+  &__bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+  }
+
+  &__view-all-button {
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #F7F9FA;
+      border-color: #D1D5DB;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  &__button-text-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button-text {
+    color: #007AFF;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__button-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // Responsive design
+  @media (max-width: 1024px) {
+    padding: 60px 0;
+
+    &__header {
+      gap: 60px;
+    }
+
+    &__intro {
+      max-width: 100%;
+    }
+
+    &__description {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__label {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+
+    &__header {
+      flex-direction: column;
+      gap: 32px;
+      text-align: center;
+    }
+
+    &__label {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    &__description-text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+
+    &__bottom-section {
+      margin-top: 32px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    &__container {
+      padding: 0 16px;
+    }
+
+    &__header {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__card-content {
+      padding: 20px 16px 16px;
+    }
+
+    &__bottom-section {
+      margin-top: 24px;
+    }
+  }
+}

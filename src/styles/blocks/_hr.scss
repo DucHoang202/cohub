@@ -1,0 +1,424 @@
+.hr {
+  display: flex;
+  padding: 80px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+
+  &__container {
+    display: flex;
+    max-width: 1200px;
+    padding: 0 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0 134px;
+    align-self: stretch;
+    flex-wrap: wrap;
+  }
+
+  &__header-content {
+    display: flex;
+    max-width: 650px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+
+  &__header-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+
+  &__eyebrow {
+    width: 694px;
+    color: #2463EB;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+
+  &__title {
+    width: 700px;
+    color: #090F14;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  &__description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    width: 368px;
+  }
+
+  &__description {
+    align-self: stretch;
+    color: #090F14;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+  &__slider-container {
+    position: relative;
+    width: 100vw;
+    margin-left: -16px;
+    height: 372px;
+
+    // Desktop: Use container width instead of viewport width
+    @media (min-width: 1025px) {
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 372px;
+    overflow: visible;
+
+    // Desktop: Full container width
+    @media (min-width: 1025px) {
+      width: 100%;
+      max-width: 1152px;
+      margin: 0 auto;
+
+      .swiper-wrapper {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    .swiper-wrapper {
+      display: flex;
+      align-items: stretch;
+      padding-right: 16px;
+    }
+
+    .swiper-slide {
+      width: 280px;
+      flex: 0 0 280px;
+      height: 100%;
+
+      &:first-child {
+        margin-left: 16px;
+      }
+
+      &:last-child {
+        margin-right: 16px;
+      }
+
+      // Desktop: Let Swiper handle 4 slides per view with 24px gap
+      @media (min-width: 1025px) {
+        width: auto;
+        flex: none;
+        margin-left: 0 !important;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    // Navigation buttons
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none; // Hide default buttons, using custom
+    }
+
+    // Pagination styling
+    .swiper-pagination {
+      position: static;
+      margin-top: 24px;
+    }
+  }
+
+  &__navigation-arrow,
+  &__navigation-prev {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 161px;
+    border-radius: 50px;
+    border: 1px solid #E6E8EC;
+    background: #FFF;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  &__navigation-arrow {
+    right: -25px;
+  }
+
+  &__navigation-prev {
+    left: -25px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    align-self: stretch;
+  }
+
+  &__bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+
+  &__view-all-button {
+    display: flex;
+    height: 48px;
+    min-width: 64px;
+    padding: 6px 23px 6px 27px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #2463EB;
+    background: transparent;
+    cursor: pointer;
+    gap: 8px;
+  }
+
+  &__button-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__button-text {
+    color: #2463EB;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+  }
+
+  &__button-icon-container {
+    display: flex;
+    padding-left: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  // Responsive design
+  @media (max-width: 768px) {
+    padding: 40px 0;
+
+    &__container {
+      padding: 0 16px;
+      gap: 24px;
+    }
+
+    &__header {
+      flex-direction: column;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    &__eyebrow,
+    &__title {
+      width: 100%;
+    }
+
+    &__description-container {
+      width: 100%;
+    }
+
+    &__description {
+      width: 100%;
+    }
+
+    &__navigation-arrow,
+    &__navigation-prev {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__container {
+      gap: 24px;
+    }
+
+    &__eyebrow {
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 130%;
+      letter-spacing: -0.03rem;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+  }
+}
+
+.hr-card {
+  display: flex;
+  width: 100%;
+  height: 372px;
+  padding: 312px 18px 21px 18px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 16px;
+  position: relative;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(9, 7, 28, 0.00) 56.99%, rgba(9, 7, 28, 0.80) 89.65%);
+      border-radius: 16px;
+    }
+  }
+
+  &__overlay {
+    display: flex;
+    width: calc(100% - 36px);
+    padding: 9px 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    left: 18px;
+    bottom: 21px;
+    height: 39px;
+    z-index: 2;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+  }
+
+  &__info {
+    display: flex;
+    padding: 0 4px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+
+  &__name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__name {
+    color: #F7F9FA;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.16px;
+  }
+
+  &__coaches-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__coaches {
+    color: #99B9FF;
+    font-family: 'Inter Display', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20.22px;
+  }
+}
+
+// Custom pagination for HR section
+.hr-pagination {
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(36, 99, 235, 0.2);
+    opacity: 1;
+    margin: 0 4px;
+
+    &.swiper-pagination-bullet-active {
+      background: #2463EB;
+      opacity: 1;
+    }
+  }
+}

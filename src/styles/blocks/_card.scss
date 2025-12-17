@@ -1,0 +1,31 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+
+  &--soft {
+    background: var(--surface);
+  }
+
+  &__content {
+    padding: 16px;
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--muted);
+  }
+}

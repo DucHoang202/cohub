@@ -1,7 +1,7 @@
 import "./feature.scss";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, FreeMode } from "swiper/modules";
+import { Pagination, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

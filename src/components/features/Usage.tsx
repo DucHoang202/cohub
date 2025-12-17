@@ -1,11 +1,9 @@
 import "./feature.scss";
 //import "../../styles/main.scss";
-import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, FreeMode } from "swiper/modules";
+import React from "react";
+
 
 const Usage: React.FC = () => {
-  const swiperRef = useRef<any>(null);
   const usageItem = [
     {
       id: 1,

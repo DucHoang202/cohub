@@ -30,7 +30,7 @@ const NewYorkSwiper = () => {
             >
                 {data.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <img src={item.image} className="title" />
+                        <img src={item.image} className="title" alt="img" />
                         <div className="subtitle">
                             {item.title}
                         </div>

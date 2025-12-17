@@ -1,4 +1,3 @@
-import React from "react";
 //import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Masonry from "react-masonry-css";
 
@@ -75,13 +74,13 @@ export default function Customers() {
                 }}
               >
                 <div className="unit-container">
-                  <img src={height.image} className="pic-1" />
+                  <img src={height.image} className="pic-1" alt="img" />
                   <div className="title">{height.title}</div>
                   <div className="subtitle">
                     {height.text}
                   </div>
                   <div className="line">
-                    <img src={height.avatar} className="avatar-container" />
+                    <img src={height.avatar} className="avatar-container" alt="img" />
 
 
                     <div className="name-container">{height.name}</div>

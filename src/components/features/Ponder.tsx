@@ -1,11 +1,9 @@
 import "./feature.scss";
-import React, { useRef, useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, FreeMode } from "swiper/modules";
+import React, { useRef, useEffect } from "react";
+
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 const Ponder: React.FC = () => {
-  const swiperRef = useRef<any>(null);
   const ref = useRef<HTMLDivElement | null>(null);
   const ref1 = useRef<HTMLDivElement | null>(null);
   const ref2 = useRef<HTMLDivElement | null>(null);

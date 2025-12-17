@@ -1,7 +1,7 @@
 import "./feature.scss";
-import React, { useRef } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, FreeMode } from "swiper/modules";
+import { FreeMode } from "swiper/modules";
 import { useMediaQuery } from "react-responsive";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -67,7 +67,6 @@ const coaches = [
 ];
 
 const Coach: React.FC = () => {
-  const swiperRef = useRef<any>(null);
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isTablet = useMediaQuery({ maxWidth: 1024 });
   const isLargeDesktop = useMediaQuery({ minWidth: 1370 });

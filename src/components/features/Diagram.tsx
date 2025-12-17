@@ -1,8 +1,6 @@
 import "./feature.scss";
-import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, FreeMode } from "swiper/modules";
-import Marquee from "react-fast-marquee";
+import React from "react";
+
 
 interface DiagramItem {
   title: string;
@@ -12,7 +10,6 @@ interface DiagramItem {
 }
 
 const Diagram: React.FC = () => {
-  const swiperRef = useRef<any>(null);
 
   // Main feature data
   const mainFeature: DiagramItem = {

@@ -58,10 +58,10 @@ const Footer: React.FC = () => {
             <h4 className="footer__nav-title">Về Chúng tôi</h4>
             <ul className="footer__nav-list">
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Giới thiệu CoHub</a>
+                <a href="/features" className="footer__nav-link">Giới thiệu CoHub</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Thông tin liên hệ</a>
+                <a href="/features" className="footer__nav-link">Thông tin liên hệ</a>
               </li>
             </ul>
           </div>
@@ -70,13 +70,13 @@ const Footer: React.FC = () => {
             <h4 className="footer__nav-title">Dịch vụ</h4>
             <ul className="footer__nav-list">
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Sự kiện trực tuyến</a>
+                <a href="/features" className="footer__nav-link">Sự kiện trực tuyến</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Đặt lịch hẹn chuyên gia</a>
+                <a href="/features" className="footer__nav-link">Đặt lịch hẹn chuyên gia</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Khoá học</a>
+                <a href="/features" className="footer__nav-link">Khoá học</a>
               </li>
             </ul>
           </div>
@@ -85,16 +85,16 @@ const Footer: React.FC = () => {
             <h4 className="footer__nav-title">Hỗ trợ</h4>
             <ul className="footer__nav-list">
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Trung tâm hỗ trợ</a>
+                <a href="/features" className="footer__nav-link">Trung tâm hỗ trợ</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Điều khoản sử dụng</a>
+                <a href="/features" className="footer__nav-link">Điều khoản sử dụng</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Điều khoản dành cho Chuyên gia</a>
+                <a href="/features" className="footer__nav-link">Điều khoản dành cho Chuyên gia</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Hướng dẫn thanh toán VNPAY</a>
+                <a href="/features" className="footer__nav-link">Hướng dẫn thanh toán VNPAY</a>
               </li>
             </ul>
           </div>
@@ -103,22 +103,22 @@ const Footer: React.FC = () => {
             <h4 className="footer__nav-title">Chính sách và quy định</h4>
             <ul className="footer__nav-list">
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Quy chế hoạt động</a>
+                <a href="/features" className="footer__nav-link">Quy chế hoạt động</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Chính sách bảo mật thông tin</a>
+                <a href="/features" className="footer__nav-link">Chính sách bảo mật thông tin</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Cơ chế giải quyết tranh chấp khiếu nại</a>
+                <a href="/features" className="footer__nav-link">Cơ chế giải quyết tranh chấp khiếu nại</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Chính sách bảo mật thanh toán</a>
+                <a href="/features" className="footer__nav-link">Chính sách bảo mật thanh toán</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Chính sách đổi trả và kiểm hàng</a>
+                <a href="/features" className="footer__nav-link">Chính sách đổi trả và kiểm hàng</a>
               </li>
               <li className="footer__nav-item">
-                <a href="#" className="footer__nav-link">Điều kiện vận chuyển và giao nhận</a>
+                <a href="/features" className="footer__nav-link">Điều kiện vận chuyển và giao nhận</a>
               </li>
             </ul>
           </div>

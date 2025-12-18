@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
         <div className="footer__separator"></div>
 
         {/* Navigation Sections */}
-        {/* <div className="footer__navigation">
+        <div className="footer__navigation">
           <div className="footer__nav-column">
             <h4 className="footer__nav-title">Về Chúng tôi</h4>
             <ul className="footer__nav-list">
@@ -128,17 +128,17 @@ const Footer: React.FC = () => {
               <h4 className="footer__nav-title">Phương thức thanh toán</h4>
               <div className="footer__payment-methods">
                 <div className="footer__payment-row">
-                  <img src="https://api.builder.io/api/v1/image/assets/TEMP/visa-logo.svg" alt="Visa" className="footer__payment-logo" />
-                  <img src="https://api.builder.io/api/v1/image/assets/TEMP/mastercard-logo.svg" alt="Mastercard" className="footer__payment-logo" />
-                  <img src="https://api.builder.io/api/v1/image/assets/TEMP/jcb-logo.svg" alt="JCB" className="footer__payment-logo" />
+                  <img src="/images/Component 1.webp" alt="Visa" className="footer__payment-logo" />
+                  <img src="/images/Component 1 (1).webp" alt="Mastercard" className="footer__payment-logo" />
+                  <img src="/images/Component 1 (2).webp" alt="JCB" className="footer__payment-logo" />
                 </div>
                 <div className="footer__payment-row">
-                  <img 
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/8eb044134e72f4e892ff6cebea59d92fee675451?width=130" 
-                    alt="VNPay" 
+                  <img
+                    src=" /images/Component 1 (4).webp                                                                                                                                                              "
+                    alt="VNPay"
                     className="footer__payment-logo footer__payment-logo--vnpay"
                   />
-                  <img src="https://api.builder.io/api/v1/image/assets/TEMP/atm-logo.svg" alt="ATM" className="footer__payment-logo" />
+                  <img src="/images/Component 1 (3).webp" alt="ATM" className="footer__payment-logo" />
                 </div>
               </div>
             </div>
@@ -146,36 +146,36 @@ const Footer: React.FC = () => {
             <div className="footer__certifications">
               <h4 className="footer__nav-title">Chứng nhận bởi</h4>
               <div className="footer__cert-logos">
-                <img 
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/ec04e2ab98c622a6b526e64836139b4f4234b235?width=224" 
-                  alt="Certification Logo" 
+                <img
+                  src="/images/chungchichatluong.webp"
+                  alt="Certification Logo"
                   className="footer__cert-logo"
                 />
-                <div className="footer__cert-group">
-                  <img 
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/9e76f18dd5780f412600964e2103c675422fb11f?width=80" 
-                    alt="Certification" 
+                {/* <div className="footer__cert-group">
+                  <img
+                    src=""
+                    alt="Certification"
                     className="footer__cert-logo footer__cert-logo--small"
                   />
-                  <img 
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/3f1297e5fe4593cb1c463d6a0cc26762404fea00?width=80" 
-                    alt="Certification" 
+                  <img
+                    src=""
+                    alt="Certification"
                     className="footer__cert-logo footer__cert-logo--small"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* Separator */}
-        {/* <div className="footer__separator"></div> */}
+        <div className="footer__separator"></div>
 
         {/* Company Information */}
         <div className="footer__company">
           <div className="footer__company-info">
             <h3 className="footer__company-name">Công ty Cổ phần CoHub</h3>
-            {/* <p className="footer__company-text">Mã số doanh nghiệp:</p>
+            <p className="footer__company-text">Mã số doanh nghiệp:</p>
             <address className="footer__company-address">
               192 Hoàng Cầu, Hà Nội
             </address>
@@ -194,7 +194,7 @@ const Footer: React.FC = () => {
                   <a href="tel:0388888888" className="footer__contact-link">0388888888</a>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
           <div className="footer__copyright">
             Copyright © 2025 CoHub. All rights reserved

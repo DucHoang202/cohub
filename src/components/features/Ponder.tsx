@@ -110,7 +110,7 @@ const Ponder: React.FC = () => {
       </div>
 
       <Marquee speed={50} gradient={false}>
-        {Array(10).fill(0).map((_, i) => (
+        {Array(50).fill(0).map((_, i) => (
           <div key={i}>
             <MarqueeItem />
           </div>

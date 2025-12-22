@@ -18,10 +18,10 @@ const Ponder: React.FC = () => {
 
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
-        [ref1, ref2, ref3, ref4, ref5, ref6, ref7].forEach((ref, i) => {
+        [ref1, ref4, ref2, ref5, ref3, ref6, ref7].forEach((ref, i) => {
           const id = window.setTimeout(() => {
             ref.current?.classList.add("is-visible");
-          }, i * 800);
+          }, i * 300);
 
           timeouts.push(id);
         });
@@ -58,8 +58,8 @@ const Ponder: React.FC = () => {
       <span className="star-container"></span>
     </span>
   )
-  const data = ["Tìm kiếm HLV giỏi ở đâu?", "Tôi không biết ai thực sự <br></br>phù hợp với tôi", "Chi phí bỏ ra cho HLV không xứng đáng<br></br> với kết quả nhận được", "Có quá nhiều HLV “lùa gà” trên mạng", "I can't get help with I need it most.", "Tôi bị mất niềm tin vào HLV trên mạng"]
-  let threeLongestSentences = data.sort((a, b) => b.length - a.length).slice(0, 3);
+  const data = ["How do I find the right coach?", "I get information overload <br /> with somany online golf tips", "I can get lost and I need help knowing what to work on", "Golf lessons are too expensive", "I can't get help with I need it most.", `I struggle to take my "range" <br /> "game" to the course`]
+  let threeLongestSentences = data.sort((a, b) => b.length - a.length).slice(0, 6);
   // let threeLongestSentences = data.slice(0, 3);
   console.log(threeLongestSentences);
   return (
@@ -82,9 +82,6 @@ const Ponder: React.FC = () => {
             <div className="ponder-section__grid grid gray b1" dangerouslySetInnerHTML={{ __html: threeLongestSentences[0] }} ref={ref}></div>
             <div className="ponder-section__grid grid yellow b2" dangerouslySetInnerHTML={{ __html: threeLongestSentences[1] }}></div>
             <div className="ponder-section__grid grid yellow b3" dangerouslySetInnerHTML={{ __html: threeLongestSentences[2] }}></div>
-
-
-
           </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -109,7 +106,7 @@ const Ponder: React.FC = () => {
         </div>
       </div>
 
-      <Marquee speed={50} gradient={false}>
+      <Marquee speed={100} gradient={false}>
         {Array(50).fill(0).map((_, i) => (
           <div key={i}>
             <MarqueeItem />

@@ -1,0 +1,51 @@
+.coaches {
+    display: flex;
+    padding: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--item-spacing-80, 80px);
+    align-self: stretch;
+
+    &.height-400 {
+        height: 400px;
+    }
+
+    .hero--section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        flex: 1 0 0;
+
+        .title {
+            color: #FFF;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
+            font-family: "Inter Display";
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: -1.68px;
+        }
+
+        .cat {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-self: stretch;
+            gap: 14px;
+
+            .dropdown {
+                display: flex;
+                padding: 15px 24px;
+                align-items: center;
+                gap: 14px;
+                color: #FFF;
+                font-family: "Inter Display";
+                font-size: 16px;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: -0.08px;
+            }
+        }
+    }
+}

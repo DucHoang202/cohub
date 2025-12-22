@@ -1,5 +1,7 @@
+'use client'
 import "./feature.scss";
-import React, { useRef } from "react";
+
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, FreeMode } from "swiper/modules";
 import "swiper/css";
@@ -35,6 +37,9 @@ const Explore: React.FC = () => {
     { name: 'Yoga', coaches: 45, image: '/images/Yoga.webp' },
     { name: 'Boxing', coaches: 38, image: '/images/Boxing.webp' }
   ];
+  const [hovered, setHovered] = useState(
+    new Array(sportsCategories.length).fill(false)
+  );
 
   return (
     <div className="explore-section">
@@ -127,12 +132,28 @@ const Explore: React.FC = () => {
                 {sportsCategories.map((coach, index) => (
                   <SwiperSlide
                     className={`card ${index === sportsCategories.length - 1 ? "last" : ""}`}
+                    onMouseEnter={() =>
+                      setHovered(prev => {
+                        const copy = [...prev];
+                        copy[index] = true;
+                        return copy;
+                      })
+                    }
+                    onMouseLeave={() =>
+                      setHovered(prev => {
+                        const copy = [...prev];
+                        copy[index] = false;
+                        return copy;
+                      })
+                    }
                     key={index}
                     style={{
                       backgroundImage: `url(${coach.image})`,
-                      backgroundSize: "cover",
                       backgroundPosition: "center",
-                      width: "285.438px"
+                      width: "285.438px",
+                      backgroundSize: hovered[index]
+                        ? "105%"
+                        : "cover",
                     }}
                   >
                     <div className="overlay">
@@ -184,7 +205,7 @@ const Explore: React.FC = () => {
           </div>
         </button>
       </div>
-    </div>
+    </div >
   );
 };
 

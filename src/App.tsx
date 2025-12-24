@@ -18,6 +18,7 @@ import Footer from './components/Footer.tsx';
 import NotFound from './pages/NotFound.tsx';
 import Features from './pages/Features.tsx';
 import Coaches from './pages/Coaches.tsx';
+import Coaches2 from './pages/Coaches2.tsx';
 function Home() {
   return (
     <div className="App">
@@ -48,7 +49,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features />} />
-        {/* <Route path="/coaches" element={<Coaches />} /> */}
+        <Route path="/coaches" element={<Coaches />} />
+        <Route path="/coaches2" element={<Coaches2 />} />
+
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

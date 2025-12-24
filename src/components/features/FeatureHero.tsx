@@ -44,7 +44,7 @@ const FeatureHero: React.FC = () => {
 
                   </div>
                 </div>
-                <input type="text" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} onFocus={() => setOpen(true)} placeholder="Chọn môn thể thao bạn muốn học"
+                <input type="text" className="text" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} onFocus={() => setOpen(true)} placeholder="Chọn môn thể thao bạn muốn học"
                 />
 
                 <div className="dropdownIcon" onClick={() => setOpen(!open)}><svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">

@@ -1,13 +1,9 @@
 import React from 'react';
 import Header from '../components/Header.tsx';
 import Footer from '../components/Footer.tsx';
-import Explore from '../components/features/Explore.tsx';
-import { Advantages, Coach, Diagram, FeatureHero, Ponder, Usage, Customers } from '../components/features/feature.ts';
+
 import Hero from '../components/coaches/Hero.tsx';
-import NewYorkSwiper from '../components/features/NewYorkSwiper.tsx';
-import Question from '../components/features/Question.tsx';
-import FindMore from '../components/features/FindMore.tsx';
-import Sponsor from '../components/features/Sponsor.tsx';
+
 import "../styles/main.scss";
 const Coaches: React.FC = () => {
     return (

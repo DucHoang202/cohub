@@ -1,3 +1,30 @@
+.dropdownIcon {
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  background: #141414;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 90;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-item {
+  padding: 10px 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .feature-hero {
   margin-top: 72px;
 
@@ -18,9 +45,6 @@
         #020c03 87.38%),
       url("../../../public/images/feature.png") lightgray center / cover no-repeat;
     background-position: center top 29%;
-
-    // background-position: center;
-    //  calc(30 / 1440 * 100vw);
 
   }
 
@@ -82,9 +106,16 @@
       align-self: stretch;
       flex-direction: row;
 
+      @media(max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+      }
+
       .left {
         display: flex;
         gap: 14px;
+
+
       }
     }
 
@@ -101,6 +132,7 @@
       border: var(--stroke-weight-1, 1px) solid rgba(255, 255, 255, 0.2);
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(8.5px);
+      z-index: 90;
 
       .search-icon {}
 
@@ -145,32 +177,6 @@
       outline: none;
     }
 
-    .dropdownIcon {
-      cursor: pointer;
-      margin-left: 8px;
-    }
-
-    .dropdown-menu {
-      position: absolute;
-      top: calc(100% + 6px);
-      left: 0;
-      width: 100%;
-      background: #141414;
-      border-radius: 12px;
-      overflow: hidden;
-      z-index: 10;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    }
-
-    .dropdown-item {
-      padding: 10px 14px;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    .dropdown-item:hover {
-      background: rgba(255, 255, 255, 0.08);
-    }
 
     .search-container {
       display: flex;

@@ -1,11 +1,37 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+
 const Hero: React.FC = () => {
     const [open, setOpen] = useState(false);
     const [open2, setOpen2] = useState(false);
     const [open3, setOpen3] = useState(false);
     const [open4, setOpen4] = useState(false);
 
-    const [searchSport, setSearchSport] = useState("");
+    const dropdownRef = useRef<HTMLDivElement | null>(null);
+    const dropdownRef2 = useRef<HTMLDivElement | null>(null);
+    const dropdownRef3 = useRef<HTMLDivElement | null>(null);
+    const dropdownRef4 = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+                setOpen(false);
+            }
+            if (dropdownRef2.current && !dropdownRef2.current.contains(e.target as Node)) {
+                setOpen2(false);
+            }
+            if (dropdownRef3.current && !dropdownRef3.current.contains(e.target as Node)) {
+                setOpen3(false);
+            }
+            if (dropdownRef4.current && !dropdownRef4.current.contains(e.target as Node)) {
+                setOpen4(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+    const [searchSport, setSearchSport] = useState("Pickleball");
     const [searchLocation, setSearchLocation] = useState("");
     const [searchGender, setSearchGender] = useState("");
     const [searchLanguage, setSearchLanguage] = useState("");
@@ -22,16 +48,16 @@ const Hero: React.FC = () => {
             <div className="feature-hero__container">
                 <div className="feature-hero__content coaches">
                     <div className="feature-hero__title">
-                        {searchSport}                    </div>
+                        {searchSport}   </div>
                     <div className="feature-hero__buttons coaches">
                         <div className="left">
-                            <div className="search-bar" onClick={() => setOpen(!open)}> <div className="text">
+                            <div className="search-bar" onClick={() => setOpen(!open)} ref={dropdownRef}> <div className="text">
                                 {searchSport || "Fitness & Gym"}                             </div>
                                 <div className="dropdownIcon">
                                     {data}
                                 </div>
                                 {open && (
-                                    <div className="dropdown-menu">
+                                    <div className="dropdown-menu" onClick={(e) => e.stopPropagation()}>
                                         {sport.map((item) => (
                                             <div
                                                 key={item}
@@ -45,14 +71,15 @@ const Hero: React.FC = () => {
                                             </div>
                                         ))}
                                     </div>
-                                )}</div>
-                            <div className="search-bar" onClick={() => setOpen2(!open2)}> <div className="text">
+                                )}
+                            </div>
+                            <div className="search-bar" onClick={() => setOpen2(!open2)} ref={dropdownRef2}> <div className="text">
                                 {searchLocation || "Khu vực"}                             </div>
                                 <div className="dropdownIcon">
                                     {data}
                                 </div>
                                 {open2 && (
-                                    <div className="dropdown-menu">
+                                    <div className="dropdown-menu" onClick={(e) => e.stopPropagation()}>
                                         {location.map((item) => (
                                             <div
                                                 key={item}
@@ -67,13 +94,13 @@ const Hero: React.FC = () => {
                                         ))}
                                     </div>
                                 )}</div>
-                            <div className="search-bar" onClick={() => setOpen3(!open3)}> <div className="text">
+                            <div className="search-bar" onClick={() => setOpen3(!open3)} ref={dropdownRef3}> <div className="text">
                                 {searchGender || "Giới tính"}                             </div>
                                 <div className="dropdownIcon">
                                     {data}
                                 </div>
                                 {open3 && (
-                                    <div className="dropdown-menu">
+                                    <div className="dropdown-menu" onClick={(e) => e.stopPropagation()}>
                                         {gender.map((item) => (
                                             <div
                                                 key={item}

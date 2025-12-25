@@ -19,6 +19,7 @@ import NotFound from './pages/NotFound.tsx';
 import Features from './pages/Features.tsx';
 import Coaches from './pages/Coaches.tsx';
 import Coaches2 from './pages/Coaches2.tsx';
+import CoachDetail from './components/coach-detail/CoachDetail.tsx';
 function Home() {
   return (
     <div className="App">
@@ -51,6 +52,7 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/coaches" element={<Coaches />} />
         <Route path="/coaches2" element={<Coaches2 />} />
+        <Route path="/coach-detail" element={<CoachDetail />} />
 
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />

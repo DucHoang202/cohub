@@ -71,7 +71,7 @@ const Coach: React.FC = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isTablet = useMediaQuery({ maxWidth: 1036 });
   const isDesktop = useMediaQuery({ maxWidth: 1370 });
-  const isLargeDesktop = useMediaQuery({ minWidth: 1370 });
+  //  const isLargeDesktop = useMediaQuery({ minWidth: 1370 });
 
   // Fixed: Different values based on screen size
   const divide = isMobile ? 4 : isTablet ? 2 : isDesktop ? 3 : 4;
